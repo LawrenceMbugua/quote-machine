@@ -451,12 +451,12 @@ const randomQuote = quotes[Math.floor(Math.random()*quotes.length)]
       return (
         
             <div className='container-fluid' >
-                <div className="card container p-3 my-3 border bg-light" id="quote-box" >
-
+                <div className="card container p-3 my-50 border bg-light" style={{minHeight: '400px', marginTop: '200px'}} id="quote-box" >
+                    
                     <p className='text font-weight-bold' id="text" style={{color: color}}> {quote.quote}  </p>
                     <p className='text' id="author" style={{color: color}}>~ {quote.author}</p>
 
-                    <div >
+                    <div className='container' style={{marginBottom: 0}}>
                         <button className='btn btn-success mx-3' style={{color: 'white', backgroundColor: color, border: 'none'}} onClick={getNewQuote} id="new-quote">New Quote</button>
                         <a className='btn btn-primary mx-3' style={{color: 'white', backgroundColor: color,  outline: 'none'}} target="_blank" href={`https://twitter.com/intent/tweet?text=${quote.quote} - ${quote.author}`} id="tweet-quote">Tweet this quote</a>
                     </div>
