@@ -453,7 +453,7 @@ const randomQuote = quotes[Math.floor(Math.random()*quotes.length)]
             <div className='container-fluid' >
                 <div className="card container p-3 my-50 border bg-light" style={{minHeight: '400px', marginTop: '200px'}} id="quote-box" >
                     
-                    <p className='text font-weight-bold' id="text" style={{color: color}}> {quote.quote}  </p>
+                    <p className='text font-weight-bold' id="text" style={{color: color, fontSize: '24px'}}> {quote.quote}  </p>
                     <p className='text' id="author" style={{color: color}}>~ {quote.author}</p>
 
                     <div className='container' style={{marginBottom: 0}}>
